@@ -1,0 +1,58 @@
+# Golib Migrate
+
+Migration solutions for Golang project.
+
+### Setup instruction
+
+Base setup, see [GoLib Instruction](https://gitlab.id.vin/vincart/golib/-/blob/develop/README.md)
+
+Both `go get` and `go mod` are supported.
+```shell
+go get gitlab.id.vin/vincart/golib-migrate
+```
+
+### Usage
+
+Using `fx.Option` to include dependencies for injection.
+
+```go
+package main
+
+import (
+    "context"
+    "gitlab.id.vin/vincart/golib"
+    "gitlab.id.vin/vincart/golib-data"
+    "gitlab.id.vin/vincart/golib-migrate"
+    "gitlab.id.vin/vincart/golib/log"
+    "go.uber.org/fx"
+)
+
+func main() {
+    if err := fx.New(
+        // Required options for migration
+        golib.AppOpt(),
+        golib.PropertiesOpt(),
+        golib.LoggingOpt(),
+        golibdata.DatasourceOpt(),
+
+        // When you want to run migration
+        golibmigrate.MigrationOpt(),
+    ).Start(context.Background()); err != nil {
+        log.Fatal("Error when migrate database: ", err)
+    }
+}
+```
+
+### Configuration
+
+```yaml
+app:
+    datasource:
+        driver: mysql # Define the database driver
+        host: localhost
+        port: 3306
+        database: sample
+        username: root
+        password: secret
+        migrationSource: file://migrations # Define location of migration files
+```
