@@ -1,4 +1,4 @@
-module gitlab.id.vin/vincart/golib-migrate
+module gitlab.com/golibs-starter/golib-migrate
 
 go 1.17
 
@@ -6,7 +6,7 @@ require (
 	github.com/golang-migrate/migrate/v4 v4.15.1
 	github.com/lib/pq v1.10.2
 	github.com/pkg/errors v0.9.1
-	gitlab.id.vin/vincart/golib v0.9.7
+	gitlab.com/golibs-starter/golib v0.9.7
 	go.uber.org/fx v1.13.1
 )
 

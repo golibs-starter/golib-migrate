@@ -1,8 +1,8 @@
 package migration
 
 import (
-	_ "gitlab.id.vin/vincart/golib"
-	"gitlab.id.vin/vincart/golib/config"
+	_ "gitlab.com/golibs-starter/golib"
+	"gitlab.com/golibs-starter/golib/config"
 )
 
 func NewProperties(loader config.Loader) (*Properties, error) {

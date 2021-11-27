@@ -4,11 +4,11 @@ Migration solutions for Golang project.
 
 ### Setup instruction
 
-Base setup, see [GoLib Instruction](https://gitlab.id.vin/vincart/golib/-/blob/develop/README.md)
+Base setup, see [GoLib Instruction](https://gitlab.com/golibs-starter/golib/-/blob/develop/README.md)
 
 Both `go get` and `go mod` are supported.
 ```shell
-go get gitlab.id.vin/vincart/golib-migrate
+go get gitlab.com/golibs-starter/golib-migrate
 ```
 
 ### Usage
@@ -20,10 +20,10 @@ package main
 
 import (
     "context"
-    "gitlab.id.vin/vincart/golib"
-    "gitlab.id.vin/vincart/golib-data"
-    "gitlab.id.vin/vincart/golib-migrate"
-    "gitlab.id.vin/vincart/golib/log"
+    "gitlab.com/golibs-starter/golib"
+    "gitlab.com/golibs-starter/golib-data"
+    "gitlab.com/golibs-starter/golib-migrate"
+    "gitlab.com/golibs-starter/golib/log"
     "go.uber.org/fx"
 )
 

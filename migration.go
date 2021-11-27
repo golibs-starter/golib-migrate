@@ -2,10 +2,10 @@ package golibmigrate
 
 import (
 	"github.com/golang-migrate/migrate/v4"
-	"gitlab.id.vin/vincart/golib"
-	"gitlab.id.vin/vincart/golib-migrate/migration"
-	"gitlab.id.vin/vincart/golib-migrate/migration/driver"
-	"gitlab.id.vin/vincart/golib/log"
+	"gitlab.com/golibs-starter/golib"
+	"gitlab.com/golibs-starter/golib-migrate/migration"
+	"gitlab.com/golibs-starter/golib-migrate/migration/driver"
+	"gitlab.com/golibs-starter/golib/log"
 	"go.uber.org/fx"
 )
 

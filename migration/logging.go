@@ -2,7 +2,7 @@ package migration
 
 import (
 	"github.com/golang-migrate/migrate/v4"
-	"gitlab.id.vin/vincart/golib/log"
+	"gitlab.com/golibs-starter/golib/log"
 	"strings"
 )
 

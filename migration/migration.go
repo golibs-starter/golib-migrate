@@ -6,7 +6,7 @@ import (
 	_ "github.com/golang-migrate/migrate/v4/source/file"
 	_ "github.com/lib/pq"
 	"github.com/pkg/errors"
-	"gitlab.id.vin/vincart/golib-migrate/migration/driver"
+	"gitlab.com/golibs-starter/golib-migrate/migration/driver"
 )
 
 func NewMigration(db *sql.DB, resolver *driver.Resolver, props *Properties, logger migrate.Logger) (*migrate.Migrate, error) {
