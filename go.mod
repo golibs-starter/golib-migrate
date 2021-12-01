@@ -6,7 +6,7 @@ require (
 	github.com/golang-migrate/migrate/v4 v4.15.1
 	github.com/lib/pq v1.10.2
 	github.com/pkg/errors v0.9.1
-	gitlab.com/golibs-starter/golib v0.9.7-beta
+	gitlab.com/golibs-starter/golib v0.9.8-beta
 	go.uber.org/fx v1.13.1
 )
 
