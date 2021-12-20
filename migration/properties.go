@@ -12,9 +12,9 @@ func NewProperties(loader config.Loader) (*Properties, error) {
 }
 
 type Properties struct {
-	Driver          string
-	Database        string
-	MigrationSource string `default:"file:///migrations"`
+	Driver          string `validate:"required"`
+	Database        string `validate:"required"`
+	MigrationSource string `validate:"required" default:"file:///migrations"`
 }
 
 func (p Properties) Prefix() string {
