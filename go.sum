@@ -961,8 +961,8 @@ github.com/yvasiyarov/newrelic_platform_go v0.0.0-20140908184405-b21fdbd4370f/go
 github.com/zenazn/goji v0.9.0/go.mod h1:7S9M489iMyHBNxwZnk9/EHS098H4/F6TATF2mIxtB1Q=
 github.com/zenthangplus/defaults v1.6.2-beta h1:2QDyud3qVvnfi/g0U3ub3EB0PI9H+D7osUAbdwCBY5Q=
 github.com/zenthangplus/defaults v1.6.2-beta/go.mod h1:WUOsmf5WcbZo/HrGwmDrpXcM9AF5ugQ4TUkijs8MQZs=
-gitlab.com/golibs-starter/golib v0.9.11-beta h1:sXdklUP3Clp+xkUSMQPydZWxBZ7gAI+K+TFJqpJR+Kw=
-gitlab.com/golibs-starter/golib v0.9.11-beta/go.mod h1:0eyqugP1eBL70FkPNSXn4R8k6tdDE/jKcvtSoSlzS8M=
+gitlab.com/golibs-starter/golib v0.10.0-beta h1:Js1pfvQ7P6pg/y8CHRjwisto0SpQye/30FieRy0nJfM=
+gitlab.com/golibs-starter/golib v0.10.0-beta/go.mod h1:0eyqugP1eBL70FkPNSXn4R8k6tdDE/jKcvtSoSlzS8M=
 gitlab.com/nyarla/go-crypt v0.0.0-20160106005555-d9a5dc2b789b/go.mod h1:T3BPAOm2cqquPa0MKWeNkmOM5RQsRhkrwMWonFMN7fE=
 go.etcd.io/bbolt v1.3.2/go.mod h1:IbVyRI1SCnLcuJnV2u8VeU0CEYM7e686BmAb1XKL+uU=
 go.etcd.io/bbolt v1.3.3/go.mod h1:IbVyRI1SCnLcuJnV2u8VeU0CEYM7e686BmAb1XKL+uU=
