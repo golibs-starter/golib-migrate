@@ -4,7 +4,7 @@ Migration solutions for Golang project.
 
 ### Setup instruction
 
-Base setup, see [GoLib Instruction](https://gitlab.com/golibs-starter/golib/-/blob/develop/README.md)
+Base setup, see [GoLib Instruction](https://gitlab.com/golibs-starter/golib/-/blob/main/README.md)
 
 Both `go get` and `go mod` are supported.
 ```shell
@@ -47,12 +47,15 @@ func main() {
 
 ```yaml
 app:
-    datasource:
-        driver: mysql # Define the database driver
-        host: localhost
-        port: 3306
-        database: sample
-        username: root
-        password: secret
-        migrationSource: file://migrations # Define location of migration files
+  datasource:
+    # Define the database driver.
+    # Supports: mysql, postgres, sqlite
+    driver: mysql
+    host: localhost
+    port: 3306
+    database: sample
+    username: root
+    password: secret
+    # Define location of migration files
+    migrationSource: file://migrations
 ```
