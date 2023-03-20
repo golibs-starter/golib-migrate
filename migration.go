@@ -18,6 +18,7 @@ func MigrationOpt() fx.Option {
 		golib.ProvideProps(migration.NewProperties),
 		ProvideMigrationDriverStrategy(driver.NewMySql),
 		ProvideMigrationDriverStrategy(driver.NewPostgres),
+		ProvideMigrationDriverStrategy(driver.NewSqlite),
 	)
 }
 
