@@ -1,8 +1,8 @@
 package migration
 
 import (
-	_ "gitlab.com/golibs-starter/golib"
-	"gitlab.com/golibs-starter/golib/config"
+	_ "github.com/golibs-starter/golib"
+	"github.com/golibs-starter/golib/config"
 )
 
 func NewProperties(loader config.Loader) (*Properties, error) {
