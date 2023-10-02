@@ -2,7 +2,7 @@ package migration
 
 import (
 	"github.com/golang-migrate/migrate/v4"
-	"gitlab.com/golibs-starter/golib/log"
+	"github.com/golibs-starter/golib/log"
 	"strings"
 )
 

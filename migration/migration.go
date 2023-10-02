@@ -4,9 +4,9 @@ import (
 	"database/sql"
 	"github.com/golang-migrate/migrate/v4"
 	_ "github.com/golang-migrate/migrate/v4/source/file"
+	"github.com/golibs-starter/golib-migrate/migration/driver"
 	_ "github.com/lib/pq"
 	"github.com/pkg/errors"
-	"gitlab.com/golibs-starter/golib-migrate/migration/driver"
 )
 
 func NewMigration(db *sql.DB, resolver *driver.Resolver, props *Properties, logger migrate.Logger) (*migrate.Migrate, error) {
